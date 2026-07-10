@@ -1,0 +1,158 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  background: var(--black-color);
+  color: var(--white-color);
+  padding: 1rem 2rem;
+}
+
+.nav-left,
+.nav-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.user-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--white-color);
+  color: var(--black-color);
+  border-radius: 50%;
+  padding: 0.2rem;
+  font-weight: 600;
+  font-size: 1.1rem;
+  width: 25px;
+  height: 25px;
+}
+nav h4 {
+  font-weight: 400;
+}
+nav p {
+  font-size: 0.9rem;
+}
+main {
+  min-height: 91vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--primary-color);
+  padding: 2rem;
+}
+.welcome-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: var(--white-color);
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.4);
+  border-radius: 12px;
+  width: 100%;
+  max-width: 600px;
+  padding: 2rem;
+}
+.welcome-img {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.welcome-img img {
+  width: 300px;
+  object-fit: cover;
+}
+.welcome-card h1 {
+  margin: 0.5rem 0rem;
+}
+.success-msg {
+  color: var(--green-color);
+}
+.welcome-success {
+  font-weight: 500;
+  font-size: 1rem;
+  color: rgba(0, 0, 0, 0.41);
+}
+.log-success {
+  font-size: 0.8rem;
+  color: rgba(0, 0, 0, 0.41);
+}
+.welcome-card button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 0.8rem 2rem;
+  margin-top: 1.8rem;
+    width: 100%;
+  max-width: 320px;
+  color: var(--white-color);
+  background: var(--black-color);
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: var(--transition);
+}
+.welcome-card button:hover {
+  transform: var(--translate-y);
+  cursor: pointer;
+  font-weight: 600;
+}
+.logout {
+  font-size: 1.3rem;
+}
+.divider-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2px;
+  margin: 0.5rem 0rem;
+}
+.divider {
+  width: 130px;
+  height: 1.5px;
+  background: rgba(128, 128, 128, 0.222);
+}
+.circle-ball {
+  color: rgba(0, 0, 0, 0.41);
+  font-size: 1.1rem;
+}
+
+@media screen and (max-width: 480px) {
+  nav {
+    padding: 1rem;
+  }
+  .nav-left,
+.nav-right {
+  gap: 7px;
+}
+  nav h4 {
+  font-weight: 400;
+  font-size: 0.9rem;
+}
+nav p {
+  font-size: 0.9rem;
+}
+  main {
+    padding: 1rem;
+  }
+  .welcome-card {
+    padding: 2rem 1rem;
+  }
+  .welcome-card h1 {
+    font-size: 1.6rem;
+  }
+  .welcome-img img {
+    width: 80%;
+  }
+  .welcome-text {
+    display: none;
+  }
+  .welcome-card button {
+    width: 100%;
+  max-width: 280px;
+  }
+}

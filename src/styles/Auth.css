@@ -1,0 +1,117 @@
+.auth {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--primary-color);
+  padding: 1rem;
+}
+.auth-card {
+  display: flex;
+  background: var(--white-color);
+  border-radius: 25px;
+  overflow: hidden;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.4);
+  width: 700px;
+  max-width: 95%;
+  margin: 0 auto;
+}
+.auth-left,
+.auth-right {
+  width: 50%;
+}
+.auth-img {
+  width: 100%;
+  height: 100%;
+}
+.auth-img img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  display: block;
+}
+.auth-right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem;
+  text-align: center;
+}
+.auth-right h2 {
+  font-weight: 500;
+  font-size: 1.4rem;
+  margin-top: 0.5rem;
+}
+.auth-right p,
+.auth-form-group ::placeholder {
+  color: rgba(128, 128, 128, 0.656);
+  font-size: 0.8rem;
+}
+.auth-form-group {
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+}
+.auth-form-group label {
+  font-size: 0.7rem;
+  font-weight: 500;
+  margin-top: 1rem;
+}
+.auth-form-group input {
+  width: 100%;
+  border-radius: 5px;
+  padding: 0.5rem 0.8rem;
+  border: 2px solid rgba(0, 0, 0, 0.622);
+  margin-top: 0.3rem;
+  outline: none;
+  transition: var(--transition);
+}
+.auth-form-group input:focus {
+  border: 2px solid var(--black-color);
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
+  transform: var(--translate-y);
+  outline: none;
+}
+
+.login-link {
+  color: var(--black-color);
+  transition: var(--transition);
+  margin-left: 5px;
+}
+.login-link:hover {
+  cursor: pointer;
+  color: var(--green-color);
+  font-weight: 500;
+}
+.error {
+  color: var(--red-color);
+  font-size: 0.7rem;
+  margin-top: 4px;
+  font-weight: 500;
+}
+
+@media screen and (max-width: 768px) {
+  .auth {
+    /* justify-content: flex-start;
+    align-items: flex-start; */
+    padding: 1.5rem;
+  }
+  .auth-card {
+    flex-direction: column;
+    max-width: 500px;
+  }
+  .auth-left,
+  .auth-right {
+    width: 100%;
+  }
+  .auth-img img {
+    height: 250px;
+  }
+  .auth-right {
+    padding: 1.5rem;
+    display: block;
+  }
+  .auth-right h2 {
+    margin-top: 0rem;
+  }
+}
